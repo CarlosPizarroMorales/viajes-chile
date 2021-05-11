@@ -1,0 +1,37 @@
+----------------------------------------------------------
+*****                   REQUISITOS                   *****
+----------------------------------------------------------
+1. OK-> Secciones: 
+1.1. OK-> Barra de navegación fija arriba, con el logo y 
+---- links a diferentes secciones de la página, usando smooth scroll.
+1.2. OK-> Un carousel arriba que muestre las imágenes destacadas del sitio.
+1.3. OK-> Una sección de presentación, usando fa-icons y 3 parrafos.
+---- Esta debe desaparecer en tamaños pequeños de pantalla. 
+1.4. OK-> Una sección de destacados, que muestre 4 cards 
+---- con la imagen e información asociada.
+1.5. OK-> Una sección de formulario de contacto con Typeform.
+1.6. OK-> Una sección footer con links a las redes sociales. 
+
+2. Puntuables: 
+2.1. OK-> 2 pts -> Estructura con etiquetas semánticas. Carga de archivos y estructura de archivos.
+2.2. OK-> 2 pts -> Aplicar CSS usando selectores y clases. Usar Google fonts y Fontawesome. Ordenado, documentado e indentado.
+2.3. OK-> 2 pts -> Realizar integración de CDN Bootstrap, usar 3 componentes (no JS) usar grilla, documentar versión utilizada (card, container, navbar, grid)
+2.4. OK-> 2 pts -> Utilizar sintaxis de JS, usar 2+ componentes BS-Js (carousel, tooltips), 1 formulario de Typeform. Ordenado y documentado. (typeform, carousel, tooltips)
+2.5. 2 pts -> Inicializar git para versionar localmente, con 5 o más commits. Crear repo en Github para versionado remoto. 
+2.6. 2 pts -> Crear la página en Github Pages.
+
+
+----------------------------------------------------------
+*****             DUDAS Y OBSERVACIONES              *****
+----------------------------------------------------------
+1. RESUELTO/ACLARAR EN CLASE-> El navbar con position-fixed quedó pequeño y no respondió a flex o ms-auto. Con fixed-top hace lo que necesito. ¿Por qué? ¿Diferencias?
+2. RESUELTO/ACLARAR EN CLASE-> Intente colocar un background-color: #000; en las globales, pero el nav se pintaba de ese color y no quedaba transparente,
+-> pese a que configuré z-índex para el navbar=100 y para el carrousel=50. ¿Por qué pasa esto?.
+3. RESUELTO-> Resolver problema de responsividad en .destacados.cards se ajustan mucho y angostan. (AJUSTAR COL-MD-3 A COL-LG-3)
+4. RESUELTO/ACLARAR EN CLASE-> Resolver problemas de responsividad de .quienes-somos: si uso regla en la documentación .d-none .d-lg-block se producen apariciones
+-> inesperadas en algunos breakpoints. Solo si declaro explícitamente: d-none d-xs-none d-sm-none d-md-none d-lg-block resulta como se supone.
+5. RESOLVER: Modifiqué la altura del formulario .typeform-widget de style="...height: 500px" a 30vw para que no tenga ese aspecto extraño-deforme en la vista móvil.
+-> pero no funciona correctamente. Corregir con estilo desde style.css, retirando el estilo inline y agregando media query para vistas xs-sm.
+6. OBSERVACION: .h-100 resuelve el problema de las tarjetas que se alargan. Es relativo al parent. 
+
+7. AGREGAR UN POPOVER Y UN MODAL

@@ -1,0 +1,51 @@
+html * {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.navbar-brand img {
+    max-width: 2.5rem;
+    min-width: 2rem;
+}
+
+
+/*
+.carrusel {
+    z-index: 50;
+}
+*/
+
+.quienes-somos,
+.quienes-somos .card,
+.carrusel,
+.destacados,
+.contactanos {
+    background-color: #000;
+}
+
+.destacados .card,
+.card-title,
+footer {
+    background-color: #17a3b8;
+}
+
+.truco {
+    background-color: #17a3b8;
+    height: 2px;
+    font-size: 0px;
+}
+
+.tooltip-inner {
+    background-color: blue;
+}
+
+.card .fas {
+    background-color: #17a3b8;
+    font-size: 1.5rem;
+}
+
+.card-img-top {
+    height: 50%;
+    overflow-x: hidden;
+    object-fit: cover;
+}
