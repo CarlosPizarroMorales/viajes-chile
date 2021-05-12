@@ -17,8 +17,8 @@
 2.2. OK-> 2 pts -> Aplicar CSS usando selectores y clases. Usar Google fonts y Fontawesome. Ordenado, documentado e indentado.
 2.3. OK-> 2 pts -> Realizar integración de CDN Bootstrap, usar 3 componentes (no JS) usar grilla, documentar versión utilizada (card, container, navbar, grid)
 2.4. OK-> 2 pts -> Utilizar sintaxis de JS, usar 2+ componentes BS-Js (carousel, tooltips), 1 formulario de Typeform. Ordenado y documentado. (typeform, carousel, tooltips)
-2.5. 2 pts -> Inicializar git para versionar localmente, con 5 o más commits. Crear repo en Github para versionado remoto. 
-2.6. 2 pts -> Crear la página en Github Pages.
+2.5. OK-> 2 pts -> Inicializar git para versionar localmente, con 5 o más commits. Crear repo en Github para versionado remoto. 
+2.6. OK-> 2 pts -> Crear la página en Github Pages.
 
 
 ----------------------------------------------------------
