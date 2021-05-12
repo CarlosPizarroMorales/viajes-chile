@@ -1,16 +1,31 @@
+// para oscurecer el navbar cuando pasa su propio height. 
+$(function() {
+    $(document).scroll(function() {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
+
 // Inicializando Tooltips para Bootstrap 5
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+
+
+
+
 // Smooth-scroll con jQuery según ejemplo de W3Schools
 $(document).ready(function() {
     // Add smooth scrolling to all links
+
     $("a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
+
+        if (this.hash != "") {
 
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -29,6 +44,4 @@ $(document).ready(function() {
             });
         } // End if
     });
-
-
 });

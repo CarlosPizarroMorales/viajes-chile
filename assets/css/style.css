@@ -49,3 +49,11 @@ footer {
     overflow-x: hidden;
     object-fit: cover;
 }
+
+
+/* oscurecer navbar cuando pasa su propio alto ver main.js */
+
+.fixed-top.scrolled {
+    background-color: #222 !important;
+    transition: background-color 500ms linear;
+}
